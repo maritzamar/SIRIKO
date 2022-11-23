@@ -5,7 +5,7 @@
     <div class="col-lg-12">
         <div class="d-flex flex-wrap align-items-center justify-content-between mb-4">
             <div>
-                <h3>Data Inventaris Barang</h3>
+                <h3>Data Inventoris Barang</h3>
             </div>
             <a href="/inventories/create" class="btn1 add-list"><i class="las la-plus mr-3"></i>Tambah Data</a>
         </div>
@@ -22,12 +22,12 @@
                 <thead class="bg-white text-uppercase">
                     <tr class="ligth ligth-data">
                         <th>No</th>
-                        <th>Kode Bagian</th>
-                        <th>Bagian</th>
+                        <th>Kode Divisi</th>
                         <th>Pegawai</th>
+                        <th>Divisi</th>
                         <th>Barang</th>
                         <th>Kode Barang</th>
-                        <th>Tipe Barang</th>
+                        <th>Type Barang</th>
                         <th>Merek</th>
                         <th>Action</th>
                     </tr>
@@ -55,7 +55,7 @@
                                          @method('delete')
                                          @csrf
                                          <button class="badge bg-danger border-0"
-                                             onclick="return confirm('Apakah anda yakin ingin menghapus data ini?')"><span
+                                             onclick="return confirm('Apakah anda yakin ingin menghapus divisi ini?')"><span
                                                  data-feather="x-circle"></span><i class="ri-delete-bin-line mr-0"></i></button>
                                         </form>
                                         

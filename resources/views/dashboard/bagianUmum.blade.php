@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('inventories', 'active')
+@section('dashboard', 'active')
 @section('page-container')
 <div class="row">
     <div class="col-lg-12">
@@ -7,7 +7,7 @@
             <div>
                 <h3>Data Inventaris Barang</h3>
             </div>
-            <a href="/inventories/create" class="btn1 add-list"><i class="las la-plus mr-3"></i>Tambah Data</a>
+           
         </div>
     </div>
 
@@ -33,37 +33,30 @@
                     </tr>
                 </thead>
                 <tbody class="ligth-body">
-                    @foreach ($inventories as $inventory)
+                  
                         <tr>
-                            <td>{{ $loop->iteration }}</td>
-                            <td>{{ $inventory->employee->division->division_code }}</td>
-                            <td>{{ $inventory->employee->division->name }}</td>
-                            <td>{{ $inventory->employee->name }}</td>
-                            <td>{{ $inventory->item->name }}</td>
-                            <td>{{ $inventory->item->item_code }}</td>
-                            <td>{{ $inventory->item->type->name }}</td>
-                            <td>{{ $inventory->item->brand->name }}</td>
+                            <td>01</td>
+                            <td>A10</td>
+                            <td>Bagian Umum</td>
+                            <td>Lutfi Agus. RO</td>
+                            <td>Monitor Lenovo 4k</td>
+                            <td>03.03</td>
+                            <td>Monitor</td>
+                            <td>Dell</td>
                             <td>
                                 <div class="d-flex align-items-center list-action ">
                                     <a class="badge bg-secondary mr-2" data-toggle="tooltip" data-placement="top" title="" data-original-title="Setting"
                                         href="/laporan"><i class="ri-settings-5-line mr-0"></i></a>
                                     <a class="badge badge-info mr-2" data-toggle="tooltip" data-placement="top" title="" data-original-title="View"
-                                        href="/inventories/{{ $inventory->id }}"><i class="ri-eye-line mr-0"></i></a>
+                                        href=""><i class="ri-eye-line mr-0"></i></a>
                                     <a class="badge bg-success mr-2" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"
-                                        href="/inventories/{{ $inventory->id }}/edit"><i class="ri-pencil-line mr-0"></i></a>
-                                        <form action="/inventories/{{ $inventory->id }}" method="post" class="d-inline">
-                                         @method('delete')
-                                         @csrf
-                                         <button class="badge bg-danger border-0"
-                                             onclick="return confirm('Apakah anda yakin ingin menghapus data ini?')"><span
-                                                 data-feather="x-circle"></span><i class="ri-delete-bin-line mr-0"></i></button>
-                                        </form>
+                                        href=""><i class="ri-pencil-line mr-0"></i></a>
+                                       
                                         
                                 </div>
                             </td>
                         </tr>
-                    @endforeach
-
+               
                 </tbody>
             </table>
         </div>

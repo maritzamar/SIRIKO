@@ -44,7 +44,7 @@
                                 value="{{ old('item_code', $inventory->item->item_code) }}">
                         </div>
                         <div class="col-md-6">
-                            <label for="type" class="form-label">Type Barang</label>
+                            <label for="type" class="form-label">Tipe Barang</label>
                             <input type="text" class="form-control" id="type" name="type" readonly
                                 value="{{ old('type', $inventory->item->type->name) }}">
                         </div>

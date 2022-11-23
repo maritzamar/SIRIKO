@@ -53,7 +53,6 @@ class DashboardItemController extends Controller
         // $validate = $request->all();
 
         Item::create($validate);
-
         return redirect('/items')->with('success', 'barang berhasil ditambahkan');
     }
 

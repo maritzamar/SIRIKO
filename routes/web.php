@@ -31,9 +31,9 @@ Route::get('/', function () {
     ]);
 })->middleware('auth');
 
-Route::get('/inventaries-div', function ($division)  {
+Route::get('/inventaries-div', function ()  {
     return view('details', [
-        'inventories' => Inventory::where('employee->division->name', '=', '$division')->get(),
+        'inventories' => Inventory::where($employee->division->name, '=', $division)->get(),
     ]);
 });
 
@@ -43,10 +43,10 @@ Route::get('/dashboard', function () {
     ]);
 })->middleware('auth');
 
-// Route::get('/laporan', function () {
-//     return view('laporan.index');
+Route::get('/dashboard1', function () {
+    return view('dashboard.bagianUmum');
     
-// });
+});
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'authenticate']);
 Route::post('/logout', [LoginController::class, 'logout']);

@@ -8,9 +8,9 @@
     <div class="col-lg-12">
         <div class="d-flex flex-wrap align-items-center justify-content-between mb-4">
             <div>
-                <h4 class="mb-3">Data Tipe</h4>
+                <h4 class="mb-3">Tipe Barang</h4>
             </div>
-            <a href="/types/create" class="btn1 add-list"><i class="las la-plus mr-3"></i>Tambah Data Tipe</a>
+            <a href="/types/create" class="btn1 add-list"><i class="las la-plus mr-3"></i>Tambah Tipe Barang</a>
         </div>
     </div>
     <div class="d-flex col-12 w-25 ">
@@ -24,8 +24,8 @@
                 <thead class="bg-white text-uppercase">
                     <tr class="ligth ligth-data">
                         <th>No</th>
-                        <th>Kode Type Barang</th>
-                        <th>Nama Type Barang</th>
+                        <th>Kode Tipe Barang</th>
+                        <th>Tipe Barang</th>
                         <th>Action</th>
                     </tr>
                 </thead>
@@ -45,7 +45,7 @@
                                          @method('delete')
                                          @csrf
                                          <button class="badge bg-danger border-0"
-                                             onclick="return confirm('Apakah anda yakin ingin menghapus divisi ini?')"><span
+                                             onclick="return confirm('Apakah anda yakin ingin menghapus tipe ini?')"><span
                                                  data-feather="x-circle"></span><i class="ri-delete-bin-line mr-0"></i></button>
                                      </form>
                                 </div>

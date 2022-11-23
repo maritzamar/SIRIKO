@@ -16,8 +16,8 @@
             <form action="/divisions" method="POST" class="forms-sample" enctype="multipart/form-data">
               @csrf
               <div class="form-group">
-                <label for="division_code" class="form-label">Kode Type Barang</label>
-                <input type="text" placeholder="Kode Divisi" class="form-control @error('division_code') is-invalid @enderror" id="division_code"
+                <label for="division_code" class="form-label">Kode Bagian</label>
+                <input type="text" placeholder="Kode Bagian" class="form-control @error('division_code') is-invalid @enderror" id="division_code"
                     name="division_code" required value="{{ old('division_code') }}">
                 @error('division_code')
                     <div class="invalid-feedback">

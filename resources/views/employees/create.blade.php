@@ -47,8 +47,8 @@
                     @endforeach
                 </select>
             </div>
-            <button type="submit" class="btn btn-primary mr-2">Submit</button>
-            <a href="/employees" class="btn btn-danger">Cancel</a>
+            <button type="submit" class="btn mt-3 btn-primary mr-2">Submit</button>
+            <a href="/employees" class="btn mt-3 btn-danger">Cancel</a>
             </form>
           </div>
         </div>

@@ -42,7 +42,7 @@
                                 @method('delete')
                                 @csrf
                                 <button class="badge bg-danger border-0"
-                                        onclick="return confirm('Apakah anda yakin ingin menghapus divisi ini?')"><span
+                                        onclick="return confirm('Apakah anda yakin ingin menghapus Data Pegawai ini?')"><span
                                         data-feather="x-circle"></span><i class="ri-delete-bin-line mr-0"></i></button>
                             </form>
                         </div>

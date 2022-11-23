@@ -370,7 +370,6 @@
                         <option value="select" > Buruk </option>
                     </select>
                   </div>
-                  
                 </div>
                 <button type="submit" class="btn mt-3 btn-primary">Submit</button>
                 <a href="/laporan" class="btn mt-3 btn-danger">Cancel</a>

@@ -21,12 +21,12 @@
                 <form class="forms-sample" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
-                        <label for="type_code" class="form-label">Kode Type Barang</label>
+                        <label for="type_code" class="form-label">Kode Tipe Barang</label>
                         <input type="text" class="form-control" id="type_code" name="type_code" readonly
                             value="{{ old('type_code', $type->type_code) }}">
                     </div>
                     <div class="form-group">
-                        <label for="name" class="form-label">Nama Type Barang</label>
+                        <label for="name" class="form-label">Tipe Barang</label>
                         <input type="text" class="form-control" id="name" name="name" readonly
                             value="{{ old('name', $type->name) }}">
                     </div>

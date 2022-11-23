@@ -102,6 +102,6 @@ class DashboardTypeItemController extends Controller
     public function destroy(Type $type)
     {
         Type::destroy($type->id);
-        return redirect('/types')->with('success', 'bagian berhasil dihapus!');
+        return redirect('/types')->with('success', 'Type berhasil dihapus!');
     }
 }

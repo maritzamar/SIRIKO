@@ -11,7 +11,7 @@
         <h3 class="page-title"> Data Pegawai </h3>
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Form Pegawaik</a></li>
+            <li class="breadcrumb-item"><a href="#">Form Pegawai</a></li>
             <li class="breadcrumb-item active" aria-current="page">Show Data Pegawai</li>
           </ol>
         </nav>
@@ -30,12 +30,12 @@
                     value="{{ old('name', $employee->name) }}">
             </div>
             <div class="form-group">
-                <label for="division_id" class="form-label">Kode Pegawai</label>
+                <label for="division_id" class="form-label">Bagian</label>
                 <input type="text" class="form-control" id="division_id" name="division_id" readonly
                     value="{{ old('division_id', $employee->division->name) }}">
             </div>
             <div class="form-group">
-                <label for="division_code" class="form-label">Kode Pegawai</label>
+                <label for="division_code" class="form-label">Kode Bagian</label>
                 <input type="text" class="form-control" id="division_code" name="division_code" readonly
                     value="{{ old('division_code', $employee->division->division_code) }}">
             </div>

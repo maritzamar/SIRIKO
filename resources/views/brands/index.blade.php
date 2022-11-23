@@ -15,6 +15,11 @@
            </div>
            <div class="d-flex col-12 w-25 ">
                <div class="table-responsive rounded mb-3 ">
+                @if (session()->has('success'))
+                    <div class="alert alert-success" role="alert">
+                    {{ session('success') }}
+                    </div>
+                @endif
                <table id="datatable" class="table data-tables table-striped">
                 <thead class="bg-white text-uppercase">
                     <tr class="ligth ligth-data">
@@ -38,7 +43,7 @@
                                          @method('delete')
                                          @csrf
                                          <button class="badge bg-danger border-0"
-                                             onclick="return confirm('Apakah anda yakin ingin menghapus divisi ini?')"><span
+                                             onclick="return confirm('Apakah anda yakin ingin menghapus Merek ini?')"><span
                                                  data-feather="x-circle"></span><i class="ri-delete-bin-line mr-0"></i></button>
                                      </form>
                                 </div>

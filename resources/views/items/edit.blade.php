@@ -88,7 +88,7 @@
                             value="{{ old('item_state', $item->item_state) }}">
                     </div>
         
-                    <button type="submit" class="btn btn-primary">Edit Barang</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
                     <a href="/items" class="btn btn-danger">Cancel</a>  
                   </form>
                 </div>

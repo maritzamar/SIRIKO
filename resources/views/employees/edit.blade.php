@@ -48,7 +48,7 @@
                     @endforeach
                 </select>
             </div>
-            <button type="submit" class="btn btn-primary">Edit Pegawai</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
             <a href="/employees" class="btn btn-danger">Cancel</a>
         </form>
         </div>

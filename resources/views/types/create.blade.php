@@ -23,7 +23,7 @@
                 <form action="/types" method="POST" class="mb-5" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
-                        <label for="name" class="form-label">Nama Type Barang</label>
+                        <label for="name" class="form-label">Tipe Barang</label>
                         <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name"
                             required autofocus value="{{ old('name') }}">
                         @error('name')
@@ -33,7 +33,7 @@
                         @enderror
                     </div>
                     <div class="form-group">
-                        <label for="type_code" class="form-label">Kode Type Barang</label>
+                        <label for="type_code" class="form-label">Kode Tipe Barang</label>
                         <input type="text" class="form-control @error('type_code') is-invalid @enderror" id="type_code"
                             name="type_code" required value="{{ old('type_code') }}">
                         @error('type_code')
